@@ -1,0 +1,2 @@
+function submitPromoForm(){$.post($('#promoEmailBlock form').attr('action'),{email:$('#promoEmailBlock_emailfield').val()},function(data){$('#promoEmailBlock').html(data);$('#promoEmailBlock_emailfield').inputFieldText('Email Address');},'html');return false;}
+$(document).ready(function(){$('#promoEmailBlock_emailfield').inputFieldText('Email Address');});
